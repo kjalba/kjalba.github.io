@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import About from './components/About'
+import Projects from './components/Projects'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header />
       <About />
+      <Projects />
     </>
   )
 }

@@ -1,9 +1,9 @@
 export default function About() {
   return (
     <>
-      <div className="container w-full px-4 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] mt-16 md:mt-24">
+      <div className="container w-full px-4 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] mt-16 md:mt-24  min-h-[50vh]">
         <div className="text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight font-['CircularStd',sans-serif] mb-2">
+          <h1 className="text-2xl md:text-3xl font-extrabold leading-tight font-['CircularStd',sans-serif] mb-2">
             Hey, I'm{" "}
             <span className="relative group inline-flex text-blue-600 cursor-auto">
               {/* Default (KJ) */}

@@ -2,19 +2,19 @@ interface ProjectCardProps {
   image: string;
   title: string;
   description: string;
+  onClick: () => void;
 }
 
-export default function ProjectCard({ image, title, description }: ProjectCardProps) {
+export default function ProjectCard({ image, title, description, onClick }: ProjectCardProps) {
   return (
     <div className="w-full sm:w-full lg:w-1/2 px-4 mt-4">
-      <div className="project-card relative w-full h-[425px] bg-gray-200 cursor-pointer rounded-lg overflow-hidden group flex flex-col justify-center">
+      <div
+        className="project-card relative w-full h-[425px] bg-gray-200 cursor-pointer rounded-lg overflow-hidden group flex flex-col justify-center"
+        onClick={onClick}
+      >
         {/* Image Wrapper */}
         <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-          <img
-            src={image}
-            alt={`${title} - Image`}
-            className="w-[70%] h-[75%] object-contain block"
-          />
+          <img src={image} alt={`${title} - Image`} className="w-[70%] h-[75%] object-contain block" />
         </div>
 
         {/* Translucent Overlay */}

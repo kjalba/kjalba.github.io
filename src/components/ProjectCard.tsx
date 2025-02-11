@@ -18,7 +18,7 @@ export default function ProjectCard({ image, title, description, onClick }: Proj
         </div>
 
         {/* Translucent Overlay */}
-        <div className="absolute inset-0 bg-[#42776a] bg-opacity-50 opacity-0 transition-opacity duration-400 ease-in-out group-hover:opacity-50"></div>
+        <div className="absolute inset-0 bg-[#FACC15] bg-opacity-50 opacity-0 transition-opacity duration-400 ease-in-out group-hover:opacity-50"></div>
 
         {/* Overlay Text */}
         <div className="absolute top-0 left-0 text-white pt-10 pl-10 max-w-[60%] leading-none opacity-0 transition-opacity duration-500 group-hover:opacity-50">
